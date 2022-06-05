@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        .container { 
+            max-width: 300px;
+            height: 400px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item {
+            background-color: pink;
+            padding: 0 5px;
+            color: white;
+            flex: 1;
+            text-align: center;
+            margin: 5px;
+        }
+        .align {
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <section class=" container align">
+        <div class="item">texto maior</div>
+        <div class="item">mais coisa escrita precisa de mais</div>
+        <div class="item">item 3 outra coisa bla bla prcisa de mais ainda</div>
+        <div class="item">texto maior</div>
+        <div class="item">mais coisa escrita precisa de mais</div>
+        <div class="item">item 3 outra coisa bla bla prcisa de mais ainda</div>
+    </section>
+</body>
+</html>
